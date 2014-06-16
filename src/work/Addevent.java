@@ -321,7 +321,7 @@ public class Addevent extends javax.swing.JFrame {
 
         try {
             TableModel model = jTable1.getModel();
-            FileWriter fw = new FileWriter("C:\\Users\\as\\Desktop\\Events\\table.txt");
+            FileWriter fw = new FileWriter("table.txt");
             
             for (int i = 0; i < model.getColumnCount(); i++) {
                 fw.write(model.getColumnName(i) + "\t");
@@ -354,7 +354,7 @@ public class Addevent extends javax.swing.JFrame {
         try
         {
         InputStreamReader isr=new InputStreamReader(System.in);
-        FileReader fr=new FileReader("C:\\Users\\as\\Desktop\\Events\\table.txt");
+        FileReader fr=new FileReader("table.txt");
         BufferedReader br=new BufferedReader(fr);
         
         while(br.readLine()!=null)
@@ -363,7 +363,7 @@ public class Addevent extends javax.swing.JFrame {
         }
         String [][]data=new String[count/3][3];       
         
-        fr=new FileReader("C:\\Users\\as\\Desktop\\Events\\table.txt");
+        fr=new FileReader("table.txt");
         br=new BufferedReader(fr);
         
         for(int i=0;i<count/3;i++)
