@@ -252,7 +252,7 @@ public class Addevent extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
         if (jTextField1.getText().equals("")) {
-            System.out.println(" Vyvedete belejka! ");
+            System.out.println("Please insert note in the text field!!");
         } else {
             model.addRow(new Object[]{jComboBox1.getSelectedItem(), jTextField1.getText(), jCalendar1.getDate()});
             jTextField1.setText("");
