@@ -142,7 +142,7 @@ public class Addevent extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(jTable1);
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Нормално", "Важно", "Много важно" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Normal", "Important" , "Very important" }));
 
         jButton4.setText("Edit Event");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -158,14 +158,14 @@ public class Addevent extends javax.swing.JFrame {
             }
         });
 
-        jButton6.setText("Записване на таблицата");
+        jButton6.setText("Save Table");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton6ActionPerformed(evt);
             }
         });
 
-        jButton7.setText("Извеждане на данните ");
+        jButton7.setText("Load Table ");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton7ActionPerformed(evt);
